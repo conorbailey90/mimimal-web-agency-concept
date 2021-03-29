@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="splash">
+        <h1>WEB DESIGN + STRATEGY</h1>
+    </section>
+    <div class="overlay"></div>
+    <div class="cursor"></div>
+
+    <main>
+        <div class="nav-bar">
+            <h1>DESIGN CO.</h1>
+
+            <ul>
+                <li onclick="goHome()" class="nav-link">Home</li>
+                <li onclick="goAbout()" class="nav-link">About</li>
+                <li onclick="goProjects()" class="nav-link">Projects</li>
+                <li onclick="goContact()" class="nav-link">Contact</li>
+            </ul>
+        </div>
+        <div class="scrollable">
+
+            <section class="header">
+                <div class="intro-text">
+                
+                    <h3>DESIGN CO.</h3>
+                    <h4>CREATIVE WEB DESIGN AGENCY</h4>
+                    <h4>LONDON, UK</h4>
+                </div>
+
+                <h1 class="subtle">WELCOME</h1>
+            </section>
+            <section class="about">
+                <div class="about-container">
+                    <div>
+                        <h1 class="heading">About Us</h1>
+
+                        <div class="line"></div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae nemo, ipsa esse voluptates, veniam reiciendis temporibus vero sunt explicabo quis nisi sapiente, culpa consequatur optio quibusdam? Esse, quo id?</p></br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt repellendus ex id non dignissimos qui magnam, tenetur officiis animi quaerat est excepturi, earum fugit accusamus quidem aspernatur perferendis pariatur 
+                            vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id quis obcaecati harum incidunt. Dolore itaque dignissimos doloribus neque dolorum provident autem veniam deleniti, iusto magnam, accusantium officia obcaecati voluptatum?</p></br>
+                    </div>
+                    <div>
+                        <h1 class="heading">Clients</h1>
+                        <div class="line"></div>
+
+                        <ul class="clients">
+                            <li>EMI</li>
+                            <li>JD Beck</li>
+                            <li>Zildjian</li>
+                            <li>Remo</li>
+                            <li>Santander</li>
+                            <li>Nord</li>
+                        </ul>
+                    </div>  
+                </div>
+            </section>
+            <section class="projects">
+
+                <div class="project-grid">
+                    <div class="project-item">
+                        <img src="./images/1.jpeg" alt="">
+                    </div>
+                    <div class="project-item">
+                        <img src="./images/2.jpeg" alt="">
+                    </div>
+                    <div class="project-item">
+                        <img src="./images/3.jpeg" alt="">
+                    </div>
+                    <div class="project-item">
+                        <img src="./images/4.jpeg" alt="">
+                    </div>
+                    <div class="project-item">
+                        <img src="./images/5.jpeg" alt="">
+                    </div>
+                    <div class="project-item">
+                        <img src="./images/6.jpeg" alt="">
+                    </div>
+            
+                </div>
+                <div class="proj-title">
+                    <h3>PROJECTS</h3>
+                </div>
+                
+            </section>
+            <section class="contact">
+                <div class="contact-container">
+                    <div>
+                        <h1 class="heading">Contact Us</h1>
+                    </div>
+                    <div>
+                        <h4>Conor Bailey</h4>
+                        <p>cbailey@design.co.uk</p>
+                        <p>+44 (0) 12 345 6789</p>
+                    </div>
+
+                    <div class="socials">
+                        <P>FB</P>
+                        <P>IG</P>
+                        <P>TW</P>
+                        <P>YT</P>
+    
+                    </div>
+                </div>
+            </section>
+           
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <script>
+        function goHome(){
+            window.scrollTo(0,header.offsetTop);
+        }
+
+        function goAbout(){
+            window.scrollTo(0,about.offsetTop - 50);
+        }
+        function goProjects(){
+            window.scrollTo(0,projects.offsetTop - 50);
+        }
+        function goContact(){
+            window.scrollTo(0,contact.offsetTop - 50);
+        }
+    </script>
+</body>
+</html>
